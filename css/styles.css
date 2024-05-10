@@ -1,0 +1,41 @@
+/* ============ COMMON STYLES ============ */
+
+:root {
+  --primary--brand--iris: #4d5ae5;
+  --pressed--state--ocean: #404bbf;
+  --dark--navy--blue: #2e2f42;
+  --success--green: #31d0aa;
+  --text--slate: #434455;
+  --subtle--text--slate: #8e8f99;
+  --accent--cornflower: #e7e9fc;
+  --light--cloud: #f4f4fd;
+  --modal--overlay--blue--modal: #2e2f42;
+  --hero--background--grey: #2e2f42;
+  --white--background--white: #ffffff;
+  --modal--background--dairy: #8e8f99;
+}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text--slate);
+  background-color: var(--white--background--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
