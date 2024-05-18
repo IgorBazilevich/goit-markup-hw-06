@@ -1,25 +1,28 @@
 /* ============ COMMON STYLES ============ */
 
 :root {
-  --primary--brand--iris: #4d5ae5;
-  --pressed--state--ocean: #404bbf;
-  --dark--navy--blue: #2e2f42;
-  --success--green: #31d0aa;
-  --text--slate: #434455;
-  --subtle--text--slate: #8e8f99;
-  --accent--cornflower: #e7e9fc;
-  --light--cloud: #f4f4fd;
-  --modal--overlay--blue--modal: #2e2f42;
-  --hero--background--grey: #2e2f42;
-  --white--background--white: #ffffff;
-  --modal--background--dairy: #8e8f99;
+	--iris: #4d5ae5;
+	--ocean: #404bbf;
+	--navy-blue: #2e2f42;
+	--green: #31d0aa;
+	--slate: #434455;
+	--light-slate: #8e8f99;
+	--cornflower: #e7e9fc;
+	--cloud: #f4f4fd;
+	--navy-blue-modal: rgba(46, 47, 66, 0.4);
+	--grey: rgba(46, 47, 66, 0.7);
+	--white: #fff;
+	--dairy: #fcfcfc;
 }
+
+
+
 
 body {
   font-family: "Roboto", sans-serif;
 
-  color: var(--text--slate);
-  background-color: var(--white--background--white);
+  color: var(--slate);
+  background-color: var(--white);
 }
 
 a {
@@ -84,11 +87,11 @@ img {
   letter-spacing: 0.03em;
   text-align: left;
   text-transform: uppercase;
-  color: var(--primary--brand--iris);
+  color: var(--iris);
 }
 
 .logo-header {
-  color: var(--dark--navy--blue);
+  color: var(--navy-blue);
 }
 
 .navigation {
@@ -104,7 +107,7 @@ img {
 
 .icon-burger {
   display: block;
-  fill: var(--dark--navy--blue);
+  fill: var(--navy-blue);
 }
 
 @media screen and (min-width: 768px) {
@@ -133,19 +136,19 @@ img {
     line-height: 24px;
     letter-spacing: 0.02em;
     text-align: left;
-    color: #2e2f42;
+    color: var(--navy-blue);
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .nav-link:hover,
   .nav-link:focus {
-    color: var(--pressed--state--ocean);
+    color: var(--ocean);
   }
 
   .current {
     position: relative;
-    color: var(--pressed--state--ocean);
+    color: var(--ocean);
   }
 
   .current::after {
@@ -153,7 +156,7 @@ img {
     position: absolute;
     left: 0;
     bottom: -1px;
-    background-color: var(--pressed--state--ocean);
+    background-color: var(--ocean);
     border-radius: 2px;
     height: 4px;
     width: 100%;
@@ -176,13 +179,13 @@ img {
     font-size: 12px;
     line-height: 117%;
     letter-spacing: 0.04em;
-    color: var(--text--slate);
+    color: var(--slate);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .auth-nav:hover,
   .auth-nav:focus {
-    color: var(--pressed--state--ocean);
+    color: var(--ocean);
   }
 }
 
@@ -207,6 +210,13 @@ img {
 /* ============ HERO STYLES ============ */
 
 .section-one {
-max-width: 320px;
+  max-width: 320px;
+}
 
+.hero-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--white);
 }
