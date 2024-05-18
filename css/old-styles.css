@@ -444,6 +444,11 @@ button:focus {
   transform: translateY(0);
 }
 
+/* .title-portfolio-li:hover p {
+  transform: translateY(0%);
+} */
+
+
 .title-text-portfolio {
   color: #434455;
 }
