@@ -448,6 +448,17 @@ button:focus {
 
 .icon-directions {
   display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--slate);
+  border-radius: 4px;
+  height: 112px;
+  background: var(--cloud);
+  margin-bottom: 8px;
+}
+
+.icon-directions {
+  display: none;
 }
 
 .icon-section-two {
@@ -483,10 +494,11 @@ button:focus {
 
 .list-title-team {
   display: flex;
-  flex-direction: column;
-  text-align: center;
   justify-content: center;
+  flex-direction: column;
   gap: 72px;
+  width: calc(100% - 24px);
+  margin: 0 auto;
 }
 
 .title-team {
@@ -503,7 +515,8 @@ button:focus {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  width: calc(100% - 24px);
+  overflow: hidden;
+  width: 100%;
 }
 
 .team-text {
@@ -1004,7 +1017,7 @@ button:focus {
       url("../images/section-one/hero-bg-mob@2x-min.png");
   }
 }
- 
+
 /* ============ TABLE ============ */
 /* ============ HEADER STYLES ============ */
 
