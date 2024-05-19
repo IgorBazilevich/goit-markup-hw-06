@@ -1128,4 +1128,42 @@ button:focus {
     flex-wrap: wrap;
     gap: 64px 24px;
   }
+
+  .team-li {
+    width: calc((100% - 186px) / 2);
+  }
+
+  .title-portfolio-list {
+    flex-direction: row;
+    gap: 72px 24px;
+  }
+
+  .title-portfolio-li {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* ============ SECTION FOOTER ============ */
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    padding-left: 108px;
+    text-align: left;
+  }
+
+  .footer-text {
+    width: 264px;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
 }
