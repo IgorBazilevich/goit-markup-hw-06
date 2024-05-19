@@ -86,7 +86,6 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-
 .navigation {
   display: flex;
   align-items: center;
@@ -448,7 +447,6 @@ button:focus {
   transform: translateY(0%);
 } */
 
-
 .title-text-portfolio {
   color: #434455;
 }
@@ -664,19 +662,16 @@ button:focus {
   border: none;
   fill: #ffffff;
   background-color: var(--pressed--state--ocean);
-  
 }
 
 .button-icon-close {
   margin: 0;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
-
-.button-icon-close:hover, 
+.button-icon-close:hover,
 .button-icon-close:focus {
-    fill: #ffffff;
+  fill: #ffffff;
 }
 
 .modal-overlay-text {
