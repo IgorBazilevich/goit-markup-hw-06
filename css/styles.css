@@ -1137,7 +1137,7 @@ button:focus {
 
   /* ============ SECTION THREE ============ */
 
-  .title-team {
+  .list-title-team {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 64px 24px;
