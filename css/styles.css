@@ -15,8 +15,6 @@
   --dairy: #fcfcfc;
 }
 
-
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -243,12 +241,9 @@ section {
   padding: 72px 16px 40px;
   opacity: 0;
   visibility: hidden;
-  box-shadow:
-    0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12),
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  transition:
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobail-menu.is-open {
@@ -269,8 +264,7 @@ section {
   height: 24px;
   border-radius: 50%;
   background-color: var(--dairy);
-  transition:
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobail-close-btn:focus {
@@ -364,9 +358,6 @@ section {
 .mobail-list--social-svg {
   fill: var(--cloud);
 }
-
-
-
 
 /* ============ SECTION ONE ============ */
 
@@ -663,7 +654,6 @@ button:focus {
   flex-direction: column;
   gap: 72px;
   text-align: center;
-  
 }
 
 .logo-link-footer {
@@ -816,11 +806,11 @@ button:focus {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-overlay.is-open {
+.modal-overlay.is-open {
   opacity: 1;
   pointer-events: all;
   visibility: visible;
-} */
+}
 
 .modal {
   position: absolute;
@@ -1002,4 +992,140 @@ button:focus {
   border: none;
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-resolution: 192dpi) and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/section-one/hero-bg-mob@2x-min.png");
+  }
+}
+
+/* ============ HEADER STYLES ============ */
+
+@media (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-link {
+    margin-right: 120px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    padding: 24px 0;
+    display: inline-block;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--pressed--state--ocean);
+  }
+
+  .current {
+    position: relative;
+    color: var(--pressed--state--ocean);
+  }
+
+  .current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: var(--pressed--state--ocean);
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+  }
+
+  .address {
+    display: block;
+    font-style: normal;
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .auth-nav {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--slate);
+    padding: 0;
+    display: inline-block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .auth-nav:hover,
+  .auth-nav:focus {
+    color: var(--ocean);
+  }
+
+  .btn-burger {
+    display: none;
+  }
+  .mobail-menu {
+    display: none;
+  }
+
+  /* ============ SECTION ONE ============ */
+
+  .hero {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/section-one/hero-bg-tab-min.jpg");
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin: 0 auto 36px auto;
+  }
+
+  /* ============ SECTION TWO ============ */
+
+  .list-title-text {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .list-title {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .title-text {
+    text-align: left;
+  }
+
+  /* ============ SECTION THREE ============ */
+
+  .title-team {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
 }
