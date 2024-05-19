@@ -1004,7 +1004,8 @@ button:focus {
       url("../images/section-one/hero-bg-mob@2x-min.png");
   }
 }
-
+ 
+/* ============ TABLE ============ */
 /* ============ HEADER STYLES ============ */
 
 @media (min-width: 768px) {
@@ -1182,6 +1183,7 @@ button:focus {
 }
 
 @media (min-width: 1158px) {
+  /* ============ DESK ============ */
   /* ============ HEADER STYLES ============ */
 
   .logo-link {
